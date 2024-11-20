@@ -9,8 +9,9 @@ const useSignUp = () => {
 
   const signUp = async (values) => {
     //Set loading to true to show loading spinner
-    setLoading(true);
     try {
+      setLoading(true);
+
       //Make API call to sign up user
       const response = await fetch("/api/v1/auth/create-user", {
         method: "POST",
@@ -33,7 +34,7 @@ const useSignUp = () => {
       toast.error(error.message);
     } finally {
       //Set loading to false to hide loading spinner
-      setLoading(false);
+      // setLoading(false);
     }
   };
   return { signUp, loading };

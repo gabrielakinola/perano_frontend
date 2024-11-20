@@ -1,4 +1,3 @@
-import React from "react";
 import OtpForm from "../../components/auth/OtpForm";
 
 const VerifyEmail = () => {

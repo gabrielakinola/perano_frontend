@@ -4,7 +4,7 @@ import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import VerifyEmail from "./pages/auth/VerifyEmail";
 import ProtectedPages from "./layouts/ProtectedPages";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <Routes>
